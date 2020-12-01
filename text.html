@@ -12,27 +12,164 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
         <style>
+            #textColor{
+                color: blueviolet;
+            }
+            #textAlignment{
+                text-align: center;
+            }
+            #textDecoration :nth-child(1){
+                text-decoration: overline;
+            }
+            #textDecoration :nth-child(2){
+                text-decoration: line-through red;
+            }
+            #textDecoration :nth-child(3){
+                text-decoration:  underline lime wavy;
+            }
+            #textDecoration :nth-child(4) a{
+                text-decoration: none;
+            }
+            #textTransformation{
+                text-transform: capitalize;
+            }
+            #textIndent{
+                text-indent: 30px;
+            }
+            #textLetterSpacing{
+                letter-spacing: 5px;
+            }
+            #textLineHeight{
+                line-height: 2;
+            }
+            #textWordSpacing{
+                word-spacing: 5px;
+            }
+            #textWhiteSpacing{
+                white-space: pre-line;
+            }
+            #textShadow{
+               text-shadow: 2px 2px 8px #FF0000;
+            }
         </style>
     </head>
 <body class="container">
 
 <h2 class="text-center">CSS Text Tutorial</h2>
 <div class="row">
-    <div class="col-3">
+    <div class="col-4">
         <a href="index.html">home</a>
     </div>
-    <div class="col-9">
+    <div class="col-8">
     </div>
 </div>
 <div class="row">
-    <div class="col-3">
-        <h4>Background Color</h4>
+    <div class="col-4">
+        <h4>Text Color</h4>
     </div>
-    <div class="col-9" id="backgroundColor">
-        Hi my name is Folau
+    <div class="col-8" id="textColor">
+        Hi my name is Folau. color property is used to set the color of the text
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Text Alignment</h4>
+    </div>
+    <div class="col-8" id="textAlignment">
+        Hi my name is Folau. text-align property is used to set the horizontal alignment of a text. A text can be left or right aligned, centered, or justified.
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Text Decoration</h4>
+        <div><strong>text-decoration:</strong>  text-decoration-line text-decoration-color text-decoration-style</div>
+        <div><strong>text-decoration-line:</strong>  none|underline|overline|line-through|initial|inherit;</div>
+        <div><strong>text-decoration-color:</strong>  color|initial|inherit;</div>
+        <div><strong>text-decoration-style:</strong>  solid|double|dotted|dashed|wavy|initial|inherit;</div>
+    </div>
+    <div class="col-8" id="textDecoration">
+        Hi my name is Folau. text-decoration property is used to set or remove decorations from text. It is not recommended to underline text that is not a link, as this often confuses the reader.
+        <p>This is paragraph 1 overline</p>
+        <p>This is paragraph 2 line-through</p>
+        <p>This is paragraph 3 underline</p>
+        <p>It is not <a>recommended</a>   to underline text that is not a link, as this often confuses the reader.</p>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Text Transformation</h4>
+        <div><strong>text-transform:</strong>  none|capitalize|uppercase|lowercase|initial|inherit;</div>
+    </div>
+    <div class="col-8" id="textTransformation">
+        Hi my name is Folau. text-transform property is used to specify uppercase and lowercase letters in a text.
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Text Spacing indentation</h4>
+    </div>
+    <div class="col-8" id="textIndent">
+        Hi my name is Folau. text-indent property is used to specify the indentation of the first line of a text.
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Text Spacing letter spacing</h4>
+    </div>
+    <div class="col-8" id="textLetterSpacing">
+        Hi my name is Folau. letter-spacing property is used to specify the space between the characters in a text.
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Text Spacing line height</h4>
+    </div>
+    <div class="col-8" id="textLineHeight">
+        Hi my name is Folau. line-height property is used to specify the space between lines. line-height property is used to specify the space between lines. line-height property is used to specify the space between lines.
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Text Spacing word spacing</h4>
+    </div>
+    <div class="col-8" id="textWordSpacing">
+        Hi my name is Folau. word-spacing property is used to specify the space between the words in a text.
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Text Spacing white space</h4>
+        <div>white-space: normal|nowrap|pre|pre-line|pre-wrap|initial|inherit;</div>
+        <a href="https://www.w3schools.com/cssref/pr_text_white-space.asp">reference</a>
+    </div>
+    <div class="col-8" id="textWhiteSpacing">
+        Hi my name is Folau. white-space property specifies how white-space inside an element is handled. white-space property specifies how white-space inside an element is handled. white-space property specifies how white-space inside an element is handled. white-space property specifies how white-space inside an element is handled.
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Text Shadow</h4>
+        <div>text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;</div>
+    </div>
+    <div class="col-8" id="textShadow">
+        Hi my name is Folau. text-shadow property adds shadow to text.
     </div>
 </div>
 <br>
 
+<br>
+<br>
+<br>
+<br>
+<br>
 </body>
 </html> 
