@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>CSS Tutorial</title>
+        <!-- jQuery -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- Bootstrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <style>
+            @media screen and (max-width: 600px) {
+                #maxWidth {
+                    background-color: lavender;
+                }
+            }
+            @media screen and (min-width: 601px) {
+                #minWidth {
+                    background-color: yellow;
+                }
+            }
+
+            @media screen and (max-width: 900px) and (min-width: 600px)   {
+                #mintomaxWidth {
+                    background-color: lightblue;
+                }
+            }
+
+            /* use , for or */
+
+            @media screen and (max-width: 800px), screen and (min-width: 600px)   {
+                #mediaWithOr {
+                    background-color: greenyellow;
+                }
+            }
+
+            @media screen and (orientation: landscape) {
+                #landscape {
+                    background-color: purple;
+                }
+            }
+
+            @media screen and (orientation: portrait) {
+                #portrait {
+                    background-color: lightblue;
+                }
+            }
+
+            @media print {
+                #print {
+                    color: blue;
+                    font-size: xx-large;
+                    font-weight: bold;
+                }
+            }
+            
+        </style>
+    </head>
+<body class="container">
+
+<h2 class="text-center">CSS Media Query Tutorial</h2>
+<div class="row">
+    <div class="col-4">
+        <a href="index.html">home</a>
+    </div>
+    <div class="col-8">
+    </div>
+</div>
+<div class="row">
+    <div class="col-4">
+        <h4>Screen with Max width</h4>
+        <div>max-width: 600x</div>
+    </div>
+    <div class="col-8" id="maxWidth">
+        max width
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Screen with Min width</h4>
+        <div>min-width: 601px</div>
+    </div>
+    <div class="col-8" id="minWidth">
+        min width
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Screen with Min to Max width</h4>
+        <div>min-width: 600px to min-width: 800px</div>
+    </div>
+    <div class="col-8" id="mintomaxWidth">
+        min to max width
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Media query with or</h4>
+    </div>
+    <div class="col-8" id="mediaWithOr">
+        media query with or
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Orientation Portrait</h4>
+    </div>
+    <div class="col-8" id="portrait">
+        portrait
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Orientation Landscape</h4>
+    </div>
+    <div class="col-8" id="landscape">
+        landscape
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Print</h4>
+    </div>
+    <div class="col-8" id="print">
+        print
+    </div>
+</div>
+<br>
+
+<script>
+    var maxWidth = document.getElementById("maxWidth");
+    console.log("maxWidth="+maxWidth.offsetWidth);
+    var minWidth = document.getElementById("minWidth");
+    console.log("minWidth="+maxWidth.offsetWidth);
+</script>
+
+</body>
+</html> 
