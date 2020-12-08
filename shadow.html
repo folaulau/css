@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>CSS Tutorial</title>
+        <!-- jQuery -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- Bootstrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <style>
+            #textShadow{
+                /* 
+                text-shadow: h-shadow v-shadow blur-radius color 
+
+                h-shadow - The position of the horizontal shadow
+                v-shadow - The position of the vertical shadow.
+                blur-radius - The blur radius. Default value is 0
+                color - color
+                */
+                text-shadow: 2px 2px 8px #FF0000;
+            }
+            #textMultipleShadow{
+                color: white;
+                text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            }
+
+            #boxShadow{
+                /*
+                box-shadow: none(no shadow)
+                box-shadow: h-offset v-offset blur spread color
+
+                h-offset - The horizontal offset of the shadow. A positive value puts the shadow on the right side of the box, a negative value puts the shadow on the left side of the box
+                v-offset - The vertical offset of the shadow. A positive value puts the shadow below the box, a negative value puts the shadow above the box
+                blur - The blur radius. The higher the number, the more blurred the shadow will be
+                spread - The spread radius. A positive value increases the size of the shadow, a negative value decreases the size of the shadow
+                color - color
+                */
+                box-shadow: 10px 10px 8px 10px #888888;
+            }
+
+            #boxMultipleShadow{
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                text-align: center;
+            }
+
+            #boxMultipleShadow .profile{
+                padding: 5px 10px;
+            }
+
+            #textBoxShadow{
+                text-shadow: 2px 2px 8px #FF0000;
+                box-shadow: 10px 10px 8px 10px #888888;
+                text-align: center;
+            }
+
+            #textBoxShadow .profile{
+                padding: 5px 10px;
+            }
+        </style>
+    </head>
+<body class="container">
+
+<h2 class="text-center">CSS Shadow Tutorial</h2>
+<div class="row">
+    <div class="col-4">
+        <a href="index.html">home</a>
+    </div>
+    <div class="col-8">
+    </div>
+</div>
+<div class="row">
+    <div class="col-4">
+        <h4>Text Shadow</h4>
+    </div>
+    <div class="col-8" id="textShadow">
+        Hi my name is Folau
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Text Multiple Shadow</h4>
+    </div>
+    <div class="col-8" id="textMultipleShadow">
+        Hi my name is Folau
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Box Shadow</h4>
+    </div>
+    <div class="col-8" id="boxShadow">
+        Hi my name is Folau
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Box Multiple Shadow</h4>
+    </div>
+    <div class="col-8" id="boxMultipleShadow">
+        <img src="superman.jpeg" alt=""  style="width:100%;padding: 10px 30px;"/>
+        <div class="profile">
+            Hi my name is Folau
+        </div>
+    </div>
+</div>
+
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Text and Box Shadow</h4>
+    </div>
+    <div class="col-8" id="textBoxShadow">
+        <img src="superman.jpeg" alt=""  style="width:100%;padding: 10px 30px;"/>
+        <div class="profile">
+            Hi my name is Folau
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html> 
