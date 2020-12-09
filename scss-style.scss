@@ -1,0 +1,26 @@
+@import "profile";
+
+$myFont: Helvetica, sans-serif;
+$myColor: gray;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+
+#variable {
+    font-family: $myFont;
+    font-size: $myFontSize;
+    color: $myColor;
+}
+
+#nesting{
+    text-align: center;
+    img{
+        width: 50%;
+    }
+
+    div{
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+}
+
