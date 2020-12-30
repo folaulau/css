@@ -12,7 +12,12 @@
 }
 
 #nesting {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
   text-align: center;
+  color: red;
 }
 #nesting img {
   width: 50%;
