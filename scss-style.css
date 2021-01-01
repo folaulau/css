@@ -1,0 +1,30 @@
+#profile {
+  font-weight: bold;
+}
+#profile .address {
+  text-decoration: wavy;
+}
+
+#variable {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: gray;
+}
+
+#nesting {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+  text-align: center;
+  color: red;
+}
+#nesting img {
+  width: 50%;
+}
+#nesting div {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/*# sourceMappingURL=scss-style.css.map */

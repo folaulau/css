@@ -11,23 +11,19 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="style.css">
-
         <style>
-
-            p {
-                color: green;
+            #boxModel{
+                background-color: lightgrey;
+                width: 10px;
+                border: 15px solid green;
+                padding: 5px;
+                margin: 5px;
             }
-        
-            a {
-                color: blue;
-            }
-        
         </style>
     </head>
 <body class="container">
 
-<h2 class="text-center">Applying CSS Tutorial</h2>
+<h2 class="text-center">CSS Box Model Tutorial</h2>
 <div class="row">
     <div class="col-3">
         <a href="index.html">home</a>
@@ -37,46 +33,22 @@
 </div>
 <div class="row">
     <div class="col-3">
-        
+        Box Model
+    </div>
+    <div class="col-9">
+        <img src="boxmodel.gif" alt="box"/>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Box Model
+    </div>
+    <div class="col-9" id="boxModel">
+        This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
 </div>
 
-<!-- Inline -->
-<div class="row">
-    <div class="col-3">
-       <h4>Inline CSS</h4>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-3" style="color: red">
-       I am inline styled
-    </div>
-</div>
-
-<!-- Internal -->
-<div class="row">
-    <div class="col-3">
-       <h4>Internal CSS</h4>
-    </div>
-</div>
-<div class="row">
-    <div class="col-3">
-       <p>I am internal styled</p>
-    </div>
-</div>
-
-<!-- External -->
-<div class="row">
-    <div class="col-3">
-       <h4>External CSS</h4>
-    </div>
-</div>
-<div class="row">
-    <div class="col-3">
-       <p class="note">I am external styled</p>
-    </div>
-</div>
 
 </body>
 </html> 

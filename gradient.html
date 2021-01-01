@@ -11,23 +11,32 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="style.css">
-
         <style>
-
-            p {
-                color: green;
+            .linearGrad1{
+                background: linear-gradient(yellow, red);
+                height: 300px;
+                text-align: center;
             }
-        
-            a {
-                color: blue;
+            .linearGrad2{
+                background: linear-gradient(to right, red , yellow);
+                height: 300px;
+                text-align: center;
             }
-        
+            .linearGrad3{
+                background: linear-gradient(to bottom right, red, yellow);
+                height: 300px;
+                text-align: center;
+            }
+            .radialGrad1{
+                background-image: radial-gradient(red, yellow, green);
+                height: 300px;
+                text-align: center;
+            }
         </style>
     </head>
 <body class="container">
 
-<h2 class="text-center">Applying CSS Tutorial</h2>
+<h2 class="text-center">CSS Gradient Tutorial</h2>
 <div class="row">
     <div class="col-3">
         <a href="index.html">home</a>
@@ -37,46 +46,41 @@
 </div>
 <div class="row">
     <div class="col-3">
-        
+        Linear Gradient
+    </div>
+    <div class="col-9 linearGrad1">
+        Default Gradient(Top to Bottom)
     </div>
 </div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Linear Gradient
+    </div>
+    <div class="col-9 linearGrad2">
+        Left to Right Gradient
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Linear Gradient
+    </div>
+    <div class="col-9 linearGrad3">
+        Diagonal(top left to bottom right)
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Radial Gradient
+    </div>
+    <div class="col-9 radialGrad1">
+        Default
+    </div>
+</div>
+<br>
 
-<!-- Inline -->
-<div class="row">
-    <div class="col-3">
-       <h4>Inline CSS</h4>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-3" style="color: red">
-       I am inline styled
-    </div>
-</div>
-
-<!-- Internal -->
-<div class="row">
-    <div class="col-3">
-       <h4>Internal CSS</h4>
-    </div>
-</div>
-<div class="row">
-    <div class="col-3">
-       <p>I am internal styled</p>
-    </div>
-</div>
-
-<!-- External -->
-<div class="row">
-    <div class="col-3">
-       <h4>External CSS</h4>
-    </div>
-</div>
-<div class="row">
-    <div class="col-3">
-       <p class="note">I am external styled</p>
-    </div>
-</div>
 
 </body>
 </html> 

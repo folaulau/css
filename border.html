@@ -11,72 +11,50 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="style.css">
-
         <style>
-
-            p {
-                color: green;
+            #border_1{
+                padding: 25px;
+                border: blue solid 2px;
             }
-        
-            a {
-                color: blue;
+            #borderRadius{
+                border-radius: 25px;
+                border: blue solid 2px;
             }
-        
         </style>
     </head>
 <body class="container">
 
-<h2 class="text-center">Applying CSS Tutorial</h2>
+<h2 class="text-center">CSS Border Tutorial</h2>
 <div class="row">
-    <div class="col-3">
+    <div class="col-4">
         <a href="index.html">home</a>
     </div>
-    <div class="col-9">
+    <div class="col-8">
     </div>
 </div>
 <div class="row">
-    <div class="col-3">
-        
+    <div class="col-4">
+        <h4>Border</h4>
+        <div><strong>border:</strong> width color style</div>
+        <div><strong>style:</strong> none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;</div>
+        <div><strong>color:</strong> any color;</div>
+        <div><strong>width:</strong> px;</div>
+    </div>
+    <div class="col-8" id="border_1">
+        Hi my name is Folau
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4">
+        <h4>Border radius</h4>
+    </div>
+    <div class="col-8" id="borderRadius">
+        Hi my name is Folau
     </div>
 </div>
 
-<!-- Inline -->
-<div class="row">
-    <div class="col-3">
-       <h4>Inline CSS</h4>
-    </div>
-</div>
 
-<div class="row">
-    <div class="col-3" style="color: red">
-       I am inline styled
-    </div>
-</div>
-
-<!-- Internal -->
-<div class="row">
-    <div class="col-3">
-       <h4>Internal CSS</h4>
-    </div>
-</div>
-<div class="row">
-    <div class="col-3">
-       <p>I am internal styled</p>
-    </div>
-</div>
-
-<!-- External -->
-<div class="row">
-    <div class="col-3">
-       <h4>External CSS</h4>
-    </div>
-</div>
-<div class="row">
-    <div class="col-3">
-       <p class="note">I am external styled</p>
-    </div>
-</div>
 
 </body>
 </html> 

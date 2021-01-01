@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>CSS Tutorial</title>
+        <!-- jQuery -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- Bootstrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <style>
+            * {
+                color: black;
+            }
+            #logo{
+                color: blue;
+            }
+            .name{
+                color: red;
+            }
+            p{
+                color: green;
+            }
+            div div p{
+                background-color: yellow;
+            }
+            /* child selector */
+            div > div > div > p{
+                background-color: red;
+            }
+
+            li {
+                list-style-type: disc;
+            }
+
+            li li {
+                list-style-type: circle;
+            }
+
+            /* adjacent sibling */
+            img + span {
+                font-weight: bold;
+            }
+            /* general sibling */
+            p ~ span {
+                color: purple;
+                font-weight: bold;
+            }
+            /*  pseudo-classes selector */
+            a > span:hover {
+                background-color: blue;
+            }
+
+            #first-child p:first-child {
+                color: green;
+                background-color: blue;
+                font-weight: bold;
+            }
+
+            #nth-child p:nth-child(2){
+                color: blue;
+            }
+
+            #before p::before{
+                content: "->";
+            }
+            #after p::before{
+                content: "<-";
+            }
+
+            #attribute p[title]{
+                background-color: purple;
+            }
+
+            #attributeValue p[title="first-para"]{
+                color: red;
+            }
+            #attributeContain p[title~="para"]{
+                color: green;
+            }
+        </style>
+
+    </head>
+<body class="container">
+
+<h2 class="text-center">CSS Selector Tutorial</h2>
+<div class="row">
+    <div class="col-3">
+        <a href="index.html">home</a>
+    </div>
+    <div class="col-9">
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        Simple Selector<br>
+        <strong>id</strong> id selector is used to select one unique element<br>
+    </div>
+    <div class="col-9">
+        <div id="logo">
+            Hello ID
+        </div>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Simple Selector<br>
+        <strong>class</strong> class selector selects HTML elements with a specific class attribute.<br>
+    </div>
+    <div class="col-9">
+        <div class="name">
+            Laulau
+        </div>
+        <div class="name">
+            Kinga
+        </div>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Simple Selector<br>
+        <strong>element</strong> element selector selects HTML elements based on the element name.<br>
+    </div>
+    <div class="col-9">
+        <p>
+            Laulau
+        </p>
+        <p>
+            Kinga
+        </p>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Simple Selector<br>
+        <strong>universal</strong> universal selector (*) selects all HTML elements on the page<br>
+    </div>
+    <div class="col-9">
+        <p>
+            Laulau
+        </p>
+        <p>
+            Kinga
+        </p>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Simple Selector<br>
+        <strong>group</strong> It will be better to group the selectors, to minimize the code. To group selectors, separate each selector with a comma.<br>
+    </div>
+    <div class="col-9">
+        <p>
+            Laulau
+        </p>
+        <p>
+            Kinga
+        </p>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Combinator Selector<br>
+        <strong>descendant</strong> selector matches all elements that are descendants of a specified element.<br>
+    </div>
+    <div class="col-9">
+        <ul>
+            <li>
+              <div>List 1</div>
+              <ul>
+                <li>Name A</li>
+                <li>Name B</li>
+              </ul>
+            </li>
+            <li>
+              <div>List 2</div>
+              <ul>
+                <li>Name A</li>
+                <li>Name B</li>
+              </ul>
+            </li>
+        </ul>
+        
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Combinator Selector<br>
+        <strong>child</strong> child selector selects all elements that are the children of a specified element.<br>
+    </div>
+    <div class="col-9">
+        <div>
+            <p>
+                Laulau
+            </p>
+            <p>
+                Kinga
+            </p>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="row">
+    <div class="col-3">
+        Combinator Selector<br>
+        <strong>adjacent sibling(+)</strong> adjacent sibling selector matches the second element only if it immediately follows the first element, and both are children of the same parent element<br>
+    </div>
+    <div class="col-9">
+        <img src="superman.jpeg" alt="superman" />
+        <span>superman</span>
+        <span>superwoman</span>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Combinator Selector<br>
+        <strong>general sibling(~)</strong> general sibling selector matches all iterations of the second element, that are following the first element (though not necessarily immediately), and are children of the same parent element.<br>
+    </div>
+    <div class="col-9">
+        <p>Here is a paragraph.</p>
+        <code>Here is some code.</code>
+        <span>And this is a red span!</span>
+        <code>More code...</code>
+        <h2> that's all. </h2> 
+        <span>And yet again this is a red span!</span>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Pseudo-classes Selector<br>
+        A pseudo-class is used to define a special state of an element.
+    </div>
+    <div class="col-9">
+        <a>Hover here <span>man</span></a>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Pseudo-classes Selector<br>
+        <strong>general sibling(~)</strong> general sibling selector matches all iterations of the second element, that are following the first element (though not necessarily immediately), and are children of the same parent element.<br>
+    </div>
+    <div class="col-9">
+        <a>Hover here <span>man</span></a>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Pseudo-classes Selector<br>
+        <strong>:first-child</strong> pseudo-class matches a specified element that is the first child of another element.<br>
+    </div>
+    <div class="col-9" id="first-child">
+        <p>The first paragraph.</p>
+        <p>The second paragraph.</p>
+        <p>The third paragraph.</p>
+        <p>The fourth paragraph.</p>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Pseudo-classes Selector<br>
+        <strong>:nth-child</strong> selector matches every element that is the nth child, regardless of type, of its parent.<br>
+    </div>
+    <div class="col-9" id="nth-child">
+        <p>The first paragraph.</p>
+        <p>The second paragraph.</p>
+        <p>The third paragraph.</p>
+        <p>The fourth paragraph.</p>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Pseudo-element Selector<br>
+        <strong>::before</strong> pseudo-element can be used to insert some content before the content of an element.<br>
+    </div>
+    <div class="col-9" id="before">
+        <p>The first paragraph.</p>
+        <p>The second paragraph.</p>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Pseudo-element Selector<br>
+        <strong>::after</strong> pseudo-element can be used to insert some content after the content of an element.<br>
+    </div>
+    <div class="col-9" id="after">
+        <p>The first paragraph.</p>
+        <p>The second paragraph.</p>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Attribute Selector<br>
+        <strong>[attribute]</strong> selector is used to select elements with a specified attribute.<br>
+    </div>
+    <div class="col-9" id="attribute">
+        <p title="first-para">The first paragraph.</p>
+        <p title="second-para">The second paragraph.</p>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Attribute Selector<br>
+        <strong>[attribute="value"]</strong> selector is used to select elements with a specified attribute and value.<br>
+    </div>
+    <div class="col-9" id="attributeValue">
+        <p title="first-para">The first paragraph.</p>
+        <p title="second-para">The second paragraph.</p>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-3">
+        Attribute Selector<br>
+        <strong>[attribute~="value"]</strong> selector is used to select elements with an attribute value containing a specified word.<br>
+    </div>
+    <div class="col-9" id="attributeContain">
+        <p title="first-para">The first paragraph.</p>
+        <p title="second-para">The second paragraph.</p>
+    </div>
+</div>
+<br>
+
+</body>
+</html> 

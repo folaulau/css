@@ -1,0 +1,37 @@
+@use "profile";
+
+$myFont: Helvetica, sans-serif;
+$myColor: gray;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+@mixin important-text {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+}
+
+
+#variable {
+    font-family: $myFont;
+    font-size: $myFontSize;
+    color: $myColor;
+
+    $myColor: red !global;
+}
+
+#nesting{
+    @include important-text;
+    text-align: center;
+    color: $myColor;
+    img{
+        width: 50%;
+    }
+
+    div{
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+}
+
